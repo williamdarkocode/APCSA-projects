@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=startDate\ studStartTime\ studEndTime
+comment0.target=MTAMachine(Date,\ MilitaryTime,\ MilitaryTime)
+comment1.params=
+comment1.target=void\ nextDay()
+comment2.params=payment
+comment2.target=MTACard\ getValueBasedCard(double)
+comment3.params=payment
+comment3.target=MTACard\ getWeeklyUnlimited(double)
+comment4.params=payment
+comment4.target=MTACard\ getMonthlyUnlimited(double)
+comment5.params=
+comment5.target=MTACard\ getStudentCard()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

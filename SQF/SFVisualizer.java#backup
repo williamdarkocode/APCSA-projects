@@ -1,0 +1,107 @@
+//Import to show errors with files
+import java.io.IOException;
+//Import to draw Colors
+import java.awt.Color;
+
+public class SFVisualizer
+{   
+    /**
+     * Reads in a Stop and Frisk data set from a file and visualizes
+     * the data set.
+     */
+    public static void visualizeData() throws IOException
+    {
+        // Get all the data from the file
+        SFDataPt[] dataSet = SFFileParser.parseFile("FILE GOES HERE");
+        
+        // Get ONLY the data for the appropriate borough
+        SFDataPt[] boroughDataSet = 
+            SFVisualizer.filterByBorough(dataSet, "BOROUGH GOES HERE");
+
+        int minX = SFVisualizer.getMinXCoord(boroughDataSet);
+        int maxX = SFVisualizer.getMaxXCoord(boroughDataSet);
+        int minY = SFVisualizer.getMinYCoord(boroughDataSet);
+        int maxY = SFVisualizer.getMaxYCoord(boroughDataSet);
+        StdDraw.setXscale(minX, maxX);
+        StdDraw.setYscale(minY, maxY);
+        
+        while(true)
+        {
+            SFVisualizer.drawData(boroughDataSet, StdDraw.BLACK, 2000);
+            SFVisualizer.drawData(boroughDataSet, StdDraw.RED, 1000);
+        }
+    }
+    
+    /**
+     * Given an array of SFDataPts, a color, and a time (measured in
+     * milliseconds), draw the points on the cavnas.
+     */
+    public static void drawData(SFDataPt[] dataSet, Color c, int timeMil)
+    {
+        StdDraw.clear();
+        for(int i = 0; i < dataSet.length; i++)
+        {
+            StdDraw.point(dataSet[i].getX(), dataSet[i].getY());
+        }
+        StdDraw.show(timeMil);
+    }
+    
+    /**
+     * Given an array of SFDataPts and a borough, returns an array of only the
+     * SFDataPts that occurred in that boroguh.
+     * 
+     * @param dataSet an array of SFDataPts
+     * @param borough the filtering borough
+     *   Precondition: borough should be "BRONX", "BROOKLYN", "MANHATTAN",
+     *   "QUEENS", or "STATEN ISLAND"
+     */
+    public static SFDataPt[] filterByBorough(SFDataPt[] dataSet, String borough)
+    {
+        // Replace this code
+        return dataSet;
+    }
+    
+    /**
+     * Returns the minimum x-coordinate contained in the dataSet.
+     * 
+     * @param dataSet An array of SFDataPts
+     */
+    public static int getMinXCoord(SFDataPt[] dataSet)
+    {
+        // Replace this code
+        return 0;
+    }
+    
+    /**
+     * Returns the minimum y-coordinate contained in the dataSet.
+     * 
+     * @param dataSet An array of SFDataPts
+     */
+    public static int getMinYCoord(SFDataPt[] dataSet)
+    {
+        // Replace this code
+        return 0;
+    }
+    
+    /**
+     * Returns the maximum x-coordinate contained in the dataSet.
+     * 
+     * @param dataSet An array of SFDataPts
+     */
+    public static int getMaxXCoord(SFDataPt[] dataSet)
+    {
+        // Replace this code
+        return 0;
+    }
+    
+    /**
+     * Returns the maximum y-coordinate contained in the dataSet.
+     * 
+     * @param dataSet An array of SFDataPts
+     */
+    public static int getMaxYCoord(SFDataPt[] dataSet)
+    {
+        // Replace this code
+        return 0;
+    }
+}

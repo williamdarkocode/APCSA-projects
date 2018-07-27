@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ testConstructor()
+comment1.params=
+comment1.target=void\ testSwipeTimeFocus()
+comment2.params=
+comment2.target=void\ testSwipeDateFocus()
+comment3.params=
+comment3.target=void\ testSwipeDateAndPriceFocus()
+comment4.params=
+comment4.target=void\ testGetCardInfo()
+comment5.params=
+comment5.target=void\ testRenew()
+numComments=6

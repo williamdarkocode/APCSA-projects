@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=h\ m
+comment0.target=MilitaryTime(int,\ int)
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=t
+comment2.target=int\ compareTo(MilitaryTime)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

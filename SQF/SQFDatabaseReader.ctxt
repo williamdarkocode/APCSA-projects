@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=fileName
+comment0.target=SQFReport[]\ read(java.lang.String)
+comment0.text=\r\n\ Given\ a\ file\ name\ for\ a\ CSV\ file\ representing\ a\ Stop,\ Question,\ &\ Frisk\ database,\ \r\n\ returns\ an\ array\ of\ SQFReport\ objects\ that\ represents\ the\ data\ set\ in\ the\ file.\r\n\ \r\n\ @param\ fileName\ a\ CSV\ file\ representing\ a\ Stop,\ Question\ &\ Frisk\ database\r\n\ @return\ an\ array\ of\ SQFReport\ objects\r\n
+numComments=1
